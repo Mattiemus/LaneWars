@@ -1,0 +1,40 @@
+name:                LaneWars
+version:             0.1.0.0
+synopsis:            A MOBA written using Haskell, Yampa, and SDL
+homepage:            https://github.com/Mattiemus/LaneWars
+
+license:             MIT
+license-file:        LICENSE
+
+author:              Matthew Wade
+maintainer:          mattie9875@hotmail.co.uk
+
+category:            Game
+
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable Client
+  main-is:           Client.hs     
+  build-depends:     base ==4.6.*, 
+                     Yampa ==0.9.*, 
+                     monad-loops ==0.4.*, 
+                     cereal ==0.4.*, 
+                     network ==2.4.*, 
+                     SDL ==0.6.*, 
+                     bytestring ==0.10.*, 
+                     ieee754 ==0.7.*, 
+                     safe ==0.3.*
+  
+executable Server
+  main-is:           Server.hs
+  build-depends:     base ==4.6.*, 
+                     Yampa ==0.9.*, 
+                     monad-loops ==0.4.*, 
+                     cereal ==0.4.*, 
+                     time ==1.4.*, 
+                     network ==2.4.*, 
+                     SDL ==0.6.*, 
+                     bytestring ==0.10.*, 
+                     ieee754 ==0.7.*, 
+                     safe ==0.3.*

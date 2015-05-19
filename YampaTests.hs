@@ -1,3 +1,5 @@
+module Main where
+
 import Control.Applicative
 
 import FRP.Yampa              as Yampa

@@ -1,5 +1,7 @@
 {-# LANGUAGE Arrows #-}
 
+module Main where
+
 import Control.Monad.Loops
 
 import FRP.Yampa              as Yampa
